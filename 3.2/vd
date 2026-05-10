@@ -1,0 +1,13 @@
+#!/bin/bash
+
+VERSION=3.2
+PACKAGE=visidata
+TOOL=vd
+DIRECTORY=$(dirname "$0")
+
+if [ -f /containers/loader ]; then
+  source /containers/loader
+fi
+
+singularity exec $OPTIONS $DIRECTORY/singularity-$PACKAGE-$VERSION.sif $TOOL "$@"
+
