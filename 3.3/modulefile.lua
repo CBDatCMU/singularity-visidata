@@ -1,12 +1,12 @@
 --
--- visidata 3.2 modulefile
+-- visidata 3.3 modulefile
 --
 -- "URL: https://www.visidata.org"
 -- "Category: Other"
 -- "Description: VisiData is an interactive multitool for tabular data."
 
 whatis("Name: visidata")
-whatis("Version: 3.2")
+whatis("Version: 3.3")
 whatis("Category: Other")
 whatis("URL: https://www.visidata.org")
 whatis("Description: VisiData is an interactive multitool for tabular data.")
@@ -17,22 +17,18 @@ VisiData is an interactive multitool for tabular data.
 Supported formats include CSV, TSV, JSON, SQLite, HDF5, and more.
 Documentation: https://www.visidata.org/docs/
 
-To load:   module load visidata/3.2
-To unload: module unload visidata/3.2
+To load:   module load visidata/3.3
+To unload: module unload visidata/3.3
 
 Commands available after loading:
 
 * vd [file ...]    open files in VisiData
 ]])
 
-if mode() == "load" then
-    LmodWarning("visidata/3.2 is deprecated. Consider using visidata/3.3.")
-end
-
 family("visidata")
 
 local package = "visidata"
-local version = "3.2"
+local version = "3.3"
 local base    = pathJoin("/containers",package,version)
 
 setenv("VISIDATA_VERSION", version)

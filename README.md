@@ -14,9 +14,9 @@ Copy the
 * `SIF` file
 * and the `vd` script
 
-to `/opt/packages/visidata/3.2`.
+to `/containers/visidata/3.2`.
 
-Copy the file `modulefile.lua` to `/opt/modulefiles/visidata` as `3.2.lua`.
+Copy the file `modulefile.lua` to `/opt/ohpc/pub/modulefiles/visidata` as `3.2.lua`.
 
 ## Building the image using the recipe
 
