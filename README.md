@@ -8,7 +8,7 @@
 # singularity-visidata
 Singularity recipe for [visidata](https://www.visidata.org/).
 
-## Installing the container on Bridges 2
+## Installing the container on lanec2
 Copy the
 
 * `SIF` file
